@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Style/style.css">
+
+    <title>Simulador - Fila</title>
+</head>
+<body>
+    <h1 id="simuladorFila" class="titulos">Simulador de Fila</h1>
+
+    <h2>Defina o tamanho da Fila</h2>
+    <input type="number" id="input-tamanho" name="tamanho" size="2">
+    <button onclick="definirTamanho()">Criar Fila</button>
+    
+    <h2>Adicionar Valor a fila</h2>
+    <input type="number" id="input-valor" name="valor" size="2">
+    <button onclick="enfileirar(document.getElementById('input-valor').value)">Enfileirar</button>
+    
+    <h2>Remover Valor da fila</h2>
+    <button onclick="desenfileirar()">Desenfileirar</button>
+    
+    <div id="simulador-fila">
+        <table id="fila-number" class="border">
+            <tr>
+              <td>Tamanho da Fila</td>
+              <td id="output-tamanho"></td>
+            </tr>
+            <tr>
+              <td>Fila</td>
+              <td id="output-fila"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="scripts/FilaScript.js"></script>
+</body>
+</html>
